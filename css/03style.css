@@ -1,0 +1,485 @@
+/*―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+0.全体に適用するCSS
+
+1.header
+
+2.main
+
+3.footer
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+
+/*―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  0.全体に適用するCSS
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+a{
+  text-decoration: none;
+  display: block;
+  color: #333333;
+}
+a:hover{
+  opacity: 0.5;
+}
+li{
+  list-style: none;
+}
+li:last-child{
+  border-right:none;
+}
+img{
+  display: block;
+}
+.is-none{
+  display: none;
+}
+
+/*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  1.header
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+/* header_top
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.header_top{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px 130px 0px 130px;
+}
+.header_top >:first-child{
+  margin-right: auto;
+}
+.logo a{
+  display: flex;
+  align-items: flex-end;
+
+}
+.logo_title{
+  margin-left: 15px;
+}
+.logo_title h1{
+  font-size: 30px;
+  font-weight: normal;
+}
+.logo_title p{
+  font-size: 18px;
+  color: #952c3e;
+}
+.business_hours{
+  text-align: right;
+  margin-right: 18px;
+}
+.tel{
+  display: flex;
+  align-items: baseline;
+  font-size: 38px;
+  color: #38bc9e;
+}
+.tel p{
+  margin-left: 10px;
+}
+.holiday{
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1024px){
+  .business_hours{
+    display: none;
+  }
+  .inquiry{
+    display: none;
+  }
+  .header_top{
+    padding:  20px;
+  }
+}
+
+/* HB MENU
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.menu-btn{
+  display: none;
+}
+.menu__item{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  .navi{
+  display: none;
+  }
+  .menu-btn{
+    display: block;
+  }
+  .is-none{
+    display: none;
+  }
+  .is-active{
+    display: block;
+  }
+}  
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+@media screen and (max-width: 1024px){
+
+.menu-btn{
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #952c3e
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color:  #952c3e;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.menu-btn span:before{
+  bottom: 8px;
+}
+.menu-btn span:after{
+  top: 8px;
+}
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.hb-menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 30%;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+  color: #fff;
+}
+.menu__item{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+.menu__item a{
+  color: #fff;
+}
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+アニメーション前のメニューの状態
+.hb-menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+アニメーション後のメニューの状態
+.hb-menu.is-active{
+  transform: translateX(0);
+}
+.is-none{
+  display: none;
+}
+.is-active{
+  display: flex;
+}
+
+
+}
+/* navi
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.navi_area{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 130px 20px 130px;
+}
+.navi{
+  width: 16.6%;
+  height: 60px;
+  display: block;
+  border-right: solid 2px #eeeeee;
+  padding-top: 14px;
+}
+.navi:hover{
+  background-color: #eeeeee;
+  color:   #952c3e;
+}
+
+.navi h3:hover{
+  color:   #952c3e;
+}
+.navi a{
+  text-align: center;
+}
+.navi h3{
+  font-family:"Noto Sans CJK JP";
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+.navi p{
+  font-size: 10px;
+  color:  #952c3e;
+}
+@media screen and (max-width: 1024px){
+  .navi_area{
+    display: none;
+  }
+}
+/* top_img
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.top_img{
+  background-image: url(../img/top_img.png);
+  height: 300px;
+  width: 100%;
+  background-size:cover;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.img_text h2{
+  font-size: 36px;
+  line-height: 50px;
+}
+.img_text p{
+  font-size: 14px;
+  line-height: 22px;
+  color:  #952c3e;
+}
+.img_text img{
+  margin: auto;
+}
+
+   
+
+/*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  2.main
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+main{
+  padding: 100px 130px;
+  display: flex;
+  background-image: url(../img/background-img.png);
+  background-position: right 0px bottom 0px;
+  background-repeat: no-repeat;
+}
+/* category
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.category{
+  width: 270px;
+  margin-right: 60px;
+}
+.category_title{
+  font-size: 22px;
+  color: #952c3e;
+  line-height: 32px;
+  width: 270px;
+  border-bottom: 1px solid #952c3e;
+  text-align: center;
+}
+.category_item{
+  line-height: 50px;
+  width: 270px;
+  font-size: 16px;
+  border-bottom: 1px solid #cccccc;
+}
+
+@media screen and (max-width: 1024px){
+  main{
+    display: block;
+    padding: 50px 65px;
+  }
+  .category{
+    margin: auto;
+  }
+  .category_item_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .category_item{
+    -webkit-transform: skewX(150deg);
+    -moz-transform: skewX(150deg);
+    transform: skewX(150deg);
+    line-height: 20px;
+    height: 50px;
+    border-bottom: none;
+    }
+  .category_item a{
+    border-right: 1px solid #000;
+    margin: 10px 0px 0px 15px;
+  }
+  .category_item p{
+    display:block;
+    transform: skewX(-150deg);
+  }
+  .bordber-none a{
+    border-right:none;
+  }
+}
+/* info
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.info{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.info_area{
+  width: 400px;
+  margin: 0px 30px 75px 0px;
+}
+.info_img{
+  width: 400px;
+  height: 260px;
+}
+.info_img img{
+  width: 400px;
+  height: 260px;
+  position: absolute;
+}
+.category_mark{
+  width: 90px;
+  line-height: 24px;
+  background-color: #333333;
+  color:#ffff;
+  position: relative;
+  top: 9px;
+  left: 9px;
+  font-size: 12px;
+  text-align: center;
+}
+.info_title{
+  padding: 30px;
+  font-size: 26px;
+  color: #952c3e;
+  font-weight: bold;
+  text-align: center;
+}
+.info_text{
+  padding: 0px 30px;
+  font-size: 15px;
+  line-height: 28px;
+}
+.page{
+  display: flex;
+  justify-content: center;
+}
+.page_no{
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1024px){
+  .info_area{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .info_img{
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+  .info_img img{
+    width: 80%;
+    height: auto;
+  }
+  .info_title{
+    display: block;
+    bottom: -100px;
+  }
+}
+/*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+  3.footer
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.ft_area{
+  display: flex;
+  justify-content: space-between;
+  background-color: #e2e2e2;
+  line-height: 70px;
+  padding: 30px 130px 70px 130px;
+}
+.ft{
+  display:flex;
+}
+.ft_logo{
+  border-right: 1px solid  #333333;
+  border-bottom: 1px solid  #333333;
+  width: 70px;
+  text-align: center;
+}
+.ft_title h2{
+  font-size: 30px;
+  font-weight:normal;
+  margin: 0 30px;
+}
+.sns{
+ margin: 10px 5px 10px 5px;
+}
+.ft_navi_area{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.ft_navi_box{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.ft_navi_item{
+  line-height: 15px;
+  border-right: 1px solid #333333;
+  padding: 0px 15px;
+}
+.copy_light{
+  background: #333333;
+  color: #FFFF;
+  line-height: 70px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px){
+  .ft_area{
+    padding: 30px 20px 70px 20px;
+    box-sizing: border-box;
+    display: block;
+  }
+  .ft_navi_box{
+    display: block;
+    margin: 30px 0 0 30px;
+    border-left: 1px solid #333333;
+  }
+  .ft_navi_item{
+    border-right: none;
+    line-height: 30px;
+  }
+}
