@@ -48,7 +48,10 @@ img{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 15px 130px 0px 130px;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 15px;
+  background-color: #fff;
 }
 .header_top >:first-child{
   margin-right: auto;
@@ -165,26 +168,54 @@ img{
   top: 0;
   right: 0;
   z-index: 1;
-  width: 30%;
+  width: 100%;
   height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   background: #555;
   color: #fff;
 }
+.hb-menu-area{
+  width: 80%;
+  margin-top: 30px;
+  background: #555;
+}
 .menu__item{
   display: block;
-  width: 100%;
+  justify-content: space-between;
   height: auto;
   margin-bottom: 20px;
-  text-align: center;
-  color: #fff;
+  border-bottom: 1px solid #fff;
+  line-height: 30px;
   box-sizing: border-box;
 }
 .menu__item a{
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+}
+.hb-footer{
+  width: 100%;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+.hb-tel{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-right: 20px;
+}
+.hb-tel a{
+  color: #fff;
+}
+.hb-tel img{
+  margin-right: 10px;
+}
 }
 /*----------------------------
 * アニメーション部分
@@ -206,15 +237,15 @@ img{
   display: flex;
 }
 
-
-}
 /* navi
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 */
 .navi_area{
   display: flex;
   justify-content: space-between;
-  padding: 20px 130px 20px 130px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px 20px 0px;
 }
 .navi{
   width: 16.6%;
@@ -310,7 +341,9 @@ main{
   font-size: 16px;
   border-bottom: 1px solid #cccccc;
 }
-
+.bordber-none a{
+  border-right:none;
+}
 @media screen and (max-width: 1024px){
   main{
     display: block;
@@ -340,9 +373,6 @@ main{
     display:block;
     transform: skewX(-150deg);
   }
-  .bordber-none a{
-    border-right:none;
-  }
 }
 /* info
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
@@ -360,18 +390,18 @@ main{
 .info_img{
   width: 400px;
   height: 260px;
+  position: relative;
 }
 .info_img img{
   width: 400px;
   height: 260px;
-  position: absolute;
 }
 .category_mark{
   width: 90px;
   line-height: 24px;
   background-color: #333333;
   color:#ffff;
-  position: relative;
+  position: absolute;
   top: 9px;
   left: 9px;
   font-size: 12px;
@@ -404,12 +434,12 @@ main{
     box-sizing: border-box;
   }
   .info_img{
-    width: 80%;
+    width: 100%;
     height: auto;
     display: block;
   }
   .info_img img{
-    width: 80%;
+    width: 100%;
     height: auto;
   }
   .info_title{
@@ -422,12 +452,17 @@ main{
   3.footer
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 */
+footer{
+  background-color: #e2e2e2;
+}
 .ft_area{
   display: flex;
   justify-content: space-between;
-  background-color: #e2e2e2;
+
   line-height: 70px;
-  padding: 30px 130px 70px 130px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0px 70px 0px;
 }
 .ft{
   display:flex;
