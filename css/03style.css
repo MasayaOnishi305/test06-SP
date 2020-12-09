@@ -85,6 +85,9 @@ img{
 .tel p{
   margin-left: 10px;
 }
+.tel a{
+  color: #38bc9e;
+}
 .holiday{
   font-size: 13px;
 }
