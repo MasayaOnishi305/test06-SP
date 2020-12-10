@@ -420,6 +420,7 @@ main{
   padding: 0px 30px;
   font-size: 15px;
   line-height: 28px;
+  margin-bottom: 80px;
 }
 .page{
   display: flex;
