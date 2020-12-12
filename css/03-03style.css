@@ -1,0 +1,88 @@
+/*―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+――
+0.全体に適用するCSS
+
+1.header
+
+2.main
+
+3.footer
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+/* 0.全体に適用するCSS
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+
+html{
+    font-family: 'Noto Serif JP', serif;
+}
+/* 1.header
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.top_img{
+    background-image: url(../img/article_img.jpg);
+}
+
+/* 2.main
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+/* main-left
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.category_item_area{
+    margin-bottom: 55px;
+    display: flex;
+}
+.serach_box{
+    display: flex;
+    border: solid 10px #f5f5f5;
+    border-right: solid 10px #f5f5f5;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.site-search{
+    border: none;
+    width: 100%;
+}
+.category_mark{
+    position: static;
+}
+/* main-right
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.article_title h3{
+    font-size: 25px;
+    line-height: 40px;
+    color: #952c3e;
+    letter-spacing: 0.025em;
+    padding: 20px 0px;
+}
+.article_img img{
+    width: 100%;
+}
+.sub_article_title{
+    font-size: 18px;
+    line-height: 40px;
+    margin: 30px 0px;
+}
+.sub_article_text_area{
+    display: flex;
+    margin-bottom: 20px;
+}
+.sub_article_text_title{
+    width: 200px;
+    height: 53px;
+    background-color: #952c3e;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 53px;
+    padding-left: 30px;
+}
+.sub_article_text{
+    line-height:  53px;
+    margin-left: 30px;
+    font-size: 16px;
+}
+.sub_article_text a{
+    display: inline;
+}

@@ -1,0 +1,11 @@
+/* top_img
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.top_img{
+    background-image: url(img/article_img.jpg);
+}
+.serach_box_area{
+    display: flex;
+    border: 10px solid #f5f5f5;
+}
+  
