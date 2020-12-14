@@ -3,6 +3,12 @@
 headerとfooterは03style.cssから適用
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 */
+/* .header
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.top_img{
+    background-image: url(../img/contact_bg.png.jpg);
+}
 /* contact_page
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 */
@@ -66,4 +72,21 @@ headerとfooterは03style.cssから適用
 }
 .btn_area input:hover{
     opacity: 0.5;
+}
+/* SP
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+@media screen and (max-width: 830px){
+    .form_area{
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+    }
+    .form_area input{
+        line-height: 50px;
+    }
+    .form_area input,textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

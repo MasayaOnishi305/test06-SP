@@ -14,7 +14,7 @@
 */
 
 html{
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Noto Sans CJK JP', serif;
 }
 /* 1.header
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
@@ -31,7 +31,6 @@ html{
 */
 .category_item_area{
     margin-bottom: 55px;
-    display: flex;
 }
 .serach_box{
     display: flex;
@@ -44,6 +43,9 @@ html{
     border: none;
     width: 100%;
 }
+.serach_box_area{
+    margin-bottom: 55px;
+}
 .category_mark{
     position: static;
 }
@@ -51,14 +53,14 @@ html{
 ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 */
 .article_title h3{
-    font-size: 25px;
+    font-size: 27px;
     line-height: 40px;
     color: #952c3e;
     letter-spacing: 0.025em;
-    padding: 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 .article_img img{
-    width: 100%;
+    width: 835px;
 }
 .sub_article_title{
     font-size: 18px;
@@ -85,4 +87,47 @@ html{
 }
 .sub_article_text a{
     display: inline;
+    color:  #952c3e;
+    text-decoration-line: underline;
+}
+@media screen and (max-width: 1024px){
+    .sub_article_text_area{
+        display: block;
+    }
+    .article_img img{
+        width: 100%;
+    }
+}
+/* secondary_ariticle_text_area
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.secondary_ariticle_text_area{
+    margin: 55px 0px 155px 0px;
+}
+.secondary_ariticle_text{
+    margin-bottom: 60px;
+}
+.secondary_ariticle_text h4{
+    font-size: 22px;
+    line-height: 40px;
+    border-bottom: solid 1px #333333;
+}
+.secondary_ariticle_text p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+/* pagenation
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+*/
+.pagenation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+    margin-bottom: 180px;
+}
+.pagenation a{
+    font-size: 14px;
+    line-height: 60px;
 }

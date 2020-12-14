@@ -36,6 +36,9 @@ img{
   display: none;
 }
 
+html{
+  font-family: 'Noto Sans CJK JP', serif;
+}
 /*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 ――
   1.header
@@ -101,6 +104,8 @@ img{
   }
   .header_top{
     padding:  20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
