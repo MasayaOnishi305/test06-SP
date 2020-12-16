@@ -54,7 +54,8 @@ headerとfooterは03style.cssから適用
 }
 .form_area textarea{
     resize: none;
-    line-height: 200px;
+    line-height: 20px;
+    height: 200px;
 }
 .btn_area{
     text-align: center;

@@ -35,10 +35,13 @@ html{
 .serach_box{
     display: flex;
     border: solid 10px #f5f5f5;
-    border-right: solid 10px #f5f5f5;
+    width: 100%;
     box-sizing: border-box;
     margin-top: 20px;
 }
+.serach_box:last-child{
+    border-right: solid 10px #f5f5f5;
+  }
 .site-search{
     border: none;
     width: 100%;
@@ -60,7 +63,7 @@ html{
     padding: 10px 0px 20px 0px;
 }
 .article_img img{
-    width: 835px;
+    width: 100%;
 }
 .sub_article_title{
     font-size: 18px;
@@ -130,4 +133,9 @@ html{
 .pagenation a{
     font-size: 14px;
     line-height: 60px;
+}
+@media screen and (max-width: 1024px){
+    .pagenation{
+        margin-bottom: 0px;
+    }
 }

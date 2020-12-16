@@ -39,6 +39,10 @@ img{
 html{
   font-family: 'Noto Sans CJK JP', serif;
 }
+:focus{
+  outline: none;
+}
+
 /*――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 ――
   1.header
@@ -94,7 +98,19 @@ html{
 .holiday{
   font-size: 13px;
 }
-
+.inquiry{
+  width: 220px;
+  font-size: 18px;
+  background-color: #952c3e;
+  text-align: center;
+  line-height: 58px;
+}
+.inquiry_box{
+  background-color: #952c3e;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 3px;
+}
 @media screen and (max-width: 1024px){
   .business_hours{
     display: none;
@@ -335,6 +351,9 @@ main{
   width: 270px;
   margin-right: 60px;
 }
+.ft_category{
+  display: none;
+}
 .category_title{
   font-size: 22px;
   color: #952c3e;
@@ -349,21 +368,31 @@ main{
   font-size: 16px;
   border-bottom: 1px solid #cccccc;
 }
-.bordber-none a{
+.border-none {
   border-right:none;
 }
 @media screen and (max-width: 1024px){
   main{
     display: block;
-    padding: 50px 65px;
+    padding: 50px 20px 100px;
   }
   .category{
-    margin: auto;
+    display:none;
+  }
+  .ft_category{
+    display: block;
+    margin: 100px auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .category_title{
+    width: 100%;
   }
   .category_item_area{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .category_item{
     -webkit-transform: skewX(150deg);
@@ -372,6 +401,7 @@ main{
     line-height: 20px;
     height: 50px;
     border-bottom: none;
+
     }
   .category_item a{
     border-right: 1px solid #000;
@@ -380,6 +410,9 @@ main{
   .category_item p{
     display:block;
     transform: skewX(-150deg);
+  }
+  .border-none a{
+    border-right: none;
   }
 }
 /* info
@@ -466,7 +499,6 @@ footer{
 .ft_area{
   display: flex;
   justify-content: space-between;
-
   line-height: 70px;
   width: 1200px;
   margin: 0 auto;
@@ -515,6 +547,7 @@ footer{
     padding: 30px 20px 70px 20px;
     box-sizing: border-box;
     display: block;
+    width: 100%;
   }
   .ft_navi_box{
     display: block;
